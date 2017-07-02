@@ -8,6 +8,9 @@
     "start": "webpack-dashboard -- webpack-dev-server",
     "test": "jest"
   },
+  "standard": {
+    "parser": "babel-eslint"
+  },
   "devDependencies": {
     "aphrodite": "^1.2.1",
     "babel-core": "^6.25.0",
