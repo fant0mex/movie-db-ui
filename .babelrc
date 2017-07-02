@@ -20,4 +20,11 @@
     "babel-preset-react",
     "babel-preset-stage-2"
   ],
+  "env": {
+    "test": {
+      "plugins": [
+        "babel-plugin-transform-es2015-modules-commonjs"
+      ]
+    }
+  }
 }

@@ -3,7 +3,7 @@ import { StyleSheet, css } from 'aphrodite/no-important'
 import { Body } from 'app/widgets/typography'
 
 const Results = props => (
-  <div className={css(styles.results)} onKeyDown={props.onKeyDown}>
+  <div className={css(styles.results)} data-test='results'>
     {props.data.map((item, i) => (
       <div
         key={i}

@@ -149,9 +149,8 @@ class App extends Component {
     } = this.state
 
     const isChecked = selected && watchList.filter(item => item.id === selected.id)
-
     return (
-      <div>
+      <div data-test='app'>
         {selected &&
           <div className={css(styles.wrapper)} style={{backgroundImage: `url(https://image.tmdb.org/t/p/original/${selected.backdrop_path})`}}>
             <div className={css(styles.overlay)}>
@@ -191,7 +190,7 @@ class App extends Component {
                       <div className={css(styles.header)}>
                         <H1>{selected.name || selected.original_title}</H1>
                         {isChecked && isChecked.length < 1 ? (
-                          <div className={css(styles.cta)} onClick={() => { this.addToWatchList(selected) }}>
+                          <div data-test='addButton' className={css(styles.cta)} onClick={() => { this.addToWatchList(selected) }}>
                             <H3>Add to Watch List</H3>
                           </div>
                         ) : (
