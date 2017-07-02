@@ -36,34 +36,34 @@ const LightGTWalsheim = {
 
 const typographyStyles = {
   h1: {
-    fontFamily: BoldGTWalsheim,
+    fontFamily: [BoldGTWalsheim],
     fontSize: `${fontSize.h1}em`,
     lineHeight: 1.175,
     color: '#fff',
     marginBottom: '0.3625em'
   },
   h2: {
-    fontFamily: LightGTWalsheim,
+    fontFamily: [LightGTWalsheim],
     fontSize: `${fontSize.h2}em`,
     lineHeight: 1.175,
     color: '#05aec2',
     marginBottom: '1em'
   },
   h3: {
-    fontFamily: LightGTWalsheim,
+    fontFamily: [LightGTWalsheim],
     fontSize: `${fontSize.h3}em`,
     lineHeight: 1.175,
     color: '#05aec2',
     marginBottom: '0.3625em'
   },
   h4: {
-    fontFamily: RegularGTWalsheim,
+    fontFamily: [RegularGTWalsheim],
     fontSize: `${fontSize.h4}em`,
     lineHeight: 1.175,
     color: '#fff'
   },
   body: {
-    fontFamily: LightGTWalsheim,
+    fontFamily: [LightGTWalsheim],
     fontSize: `${fontSize.body}em`,
     lineHeight: 1.5,
     color: '#fff'
