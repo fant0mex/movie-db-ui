@@ -31,29 +31,33 @@ const BoldGTWalsheim = {
 
 const LightGTWalsheim = {
   fontFamily: 'gt-walsheim-light',
-  src: `url('/src/assets/fonts/gt-walsheim-light.ttf') format('truetype')`
+  src: `url('src/assets/fonts/gt-walsheim-light.ttf') format('truetype')`
 }
 
 const typographyStyles = {
   h1: {
+    fontFamily: BoldGTWalsheim,
     fontSize: `${fontSize.h1}em`,
     lineHeight: 1.175,
     color: '#fff',
     marginBottom: '0.3625em'
   },
   h2: {
+    fontFamily: LightGTWalsheim,
     fontSize: `${fontSize.h2}em`,
     lineHeight: 1.175,
     color: '#05aec2',
     marginBottom: '1em'
   },
   h3: {
+    fontFamily: LightGTWalsheim,
     fontSize: `${fontSize.h3}em`,
     lineHeight: 1.175,
     color: '#05aec2',
     marginBottom: '0.3625em'
   },
   h4: {
+    fontFamily: RegularGTWalsheim,
     fontSize: `${fontSize.h4}em`,
     lineHeight: 1.175,
     color: '#fff'
@@ -67,7 +71,6 @@ const typographyStyles = {
 }
 
 export function H1 (props) {
-  console.log(styles.h1)
   const classNames = css(styles.h1)
   return (
     <h1 className={classNames}>{props.children}</h1>
